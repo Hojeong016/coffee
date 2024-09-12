@@ -1,12 +1,11 @@
 package com.example.coffee.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.Locale;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -15,34 +14,24 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class User {
+public class OrderItems {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
-    @Column(name = "email")
-    private  String email;
+    @Column(name = "order_id")
+    private long orderId;
 
-    @Column(name = "password")
-    private  String password;
+    @Column(name = "product_id")
+    private long productId;
 
-    @Column(name = "address")
-    private  String address;
+    @Column(name = "category")
+    private Category category;
 
-    @Column(name = "postalCode")
-    private  String postalCode;
+    @Column(name = "pricce")
+    private long price;
 
-    @Column(name = "orderStatus")
-    private String orderStatus;
-
-    @Column(name = "orderItems")
-    private String orderItems;
-
-    @Column(name = "create_at")
-    private LocalDate createAt;
-
-    @Column(name = "update_at")
-    private LocalDate updateAt;
-
+    @Column(name = "quantity")
+    private int quantity;
 }

@@ -8,7 +8,7 @@
 <body>
 <div class="signup-form">
   <h2>회원가입</h2>
-  <form action="#" th th:action="@{/signUp}" th:object="${signUpDTO}" method="post">
+  <form action="#" th th:action="@{/signUp/signUpForm}" th:object="${signUpDTO}" method="post">
     <input type="text" th:field="*{accountId}" placeholder="아이디"><br>
     <div th:if="${#fields.hasErrors('accountId')}" th:errors="*{accountId}"></div><br>
 

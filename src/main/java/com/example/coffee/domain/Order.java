@@ -7,6 +7,9 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -15,17 +18,14 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class User {
+public class Order {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @Column(name = "email")
-    private  String email;
-
-    @Column(name = "password")
-    private  String password;
+    @Column(name = "user_id")
+    private long userId;
 
     @Column(name = "address")
     private  String address;
@@ -44,5 +44,4 @@ public class User {
 
     @Column(name = "update_at")
     private LocalDate updateAt;
-
 }

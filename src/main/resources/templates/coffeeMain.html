@@ -8,32 +8,44 @@
 </head>
 <body>
 
-    <div class="header"></div>
+<div class="header">
+    <!-- 이미지가 정상적으로 로드되는지 확인하기 위한 테스트용 <img> 태그 -->
+    <img src="/image/cafe.png" alt="Cafe Image" style="width: 100%; height: auto;">
+</div>
 
-    <h1 class="welcome-text">어서오세요 커피 오더 서비스 입니다</h1>
+<h1 class="welcome-text">어서오세요 커피 오더 서비스 입니다</h1>
+<p class="signup-text">아직 회원이 아니신가요?
+    <br/>
+    <br/>
+    <a href="/signUpForm" class="signup-button">회원가입 하러가기</a></p>
 
-    <div class="menu-container">
-        <div class="menu-item">
-            <img src="https://your-latte-image-url.jpg" alt="Latte">
-            <h3>Latte</h3>
-            <p>₩4,000</p>
-        </div>
-        <div class="menu-item">
-            <img src="https://your-espresso-image-url.jpg" alt="Espresso">
-            <h3>Espresso</h3>
-            <p>₩3,000</p>
-        </div>
-        <div class="menu-item">
-            <img src="https://your-cappuccino-image-url.jpg" alt="Cappuccino">
-            <h3>Cappuccino</h3>
-            <p>₩4,500</p>
-        </div>
-        <div class="menu-item">
-            <img src="https://your-mocha-image-url.jpg" alt="Mocha">
-            <h3>Mocha</h3>
-            <p>₩5,000</p>
-        </div>
+<div class="menu-container">
+    <div class="menu-item">
+        <img src="https://your-latte-image-url.jpg" alt="Latte">
+        <h3>Latte</h3>
+        <p>₩4,000</p>
     </div>
+    <div class="menu-item">
+        <img src="https://your-espresso-image-url.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>₩3,000</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://your-cappuccino-image-url.jpg" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>₩4,500</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://your-mocha-image-url.jpg" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>₩5,000</p>
+    </div>
+</div>
+
+<div class="login-container">
+    <a href="/login-user" class="login-button">주문하고 싶어요</a>
+    <a href="/login-admin" class="login-button">등록하고 싶어요</a>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.header {
+    background-image: url("/static/image/cafe.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.signup-text {
+    margin: 20px 0;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3e2723; /* Dark brown button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3e2723; /* Dark brown button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
